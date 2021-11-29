@@ -1,0 +1,33 @@
+[{
+        "nombre":"Dra.Annabel Lopez",
+        "especialidad": "Pediatría"
+    },
+    {
+        "nombre": "Dr.Gustavo Correa",
+        "especialidad": "Traumatología"
+    }, 
+    {
+        "nombre": "Dra.Nancy Gomez",
+        "especialidad": "Endocrinología"
+    },         
+    {
+        "nombre": "Dr.Carlos Fuentes",
+        "especialidad":"Oftanmología"
+    },
+    {
+        "nombre": "Dr.Francisco Arregui",
+        "especialidad": "Nefrología"
+    },     
+    {
+        "nombre":"Dra.Carla Monte",
+        "especialidad":"Odontología"
+    },
+    {
+        "nombre":"Lic.Paula Diaz",  
+        "especialidad":"Psicología"
+    },
+    {
+        "nombre":"Dr.Martin Fernandez",
+        "especialidad":"Nutricionista"
+    }
+]
