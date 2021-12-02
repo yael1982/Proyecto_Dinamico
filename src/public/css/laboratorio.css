@@ -1,0 +1,111 @@
+
+body{
+    background-image: url(/imagenes/img/fondo1.jpg);
+    font-family: 'Caveat', cursive;
+    display: flex;
+}
+
+header{
+    position: fixed;
+    top:0px;
+	background-color: #33d9b2;
+	width: 100%;
+    height: 130px;
+}
+
+
+
+p{
+    font-size: 30px;
+    color: #40407a;
+    margin-left: 25px;
+    margin-top: 200px;
+}
+    
+
+
+h1{
+    font-size: 60px;
+    color: #40407a;
+    margin-left: 25px;
+    text-align: center;
+    font-style: oblique;
+}
+
+main{
+    display: flex;
+    position: absolute;
+}
+
+.formulario{
+    background-color: #40407a;
+    display: flex;
+    margin-top: 400px;
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+    border: turquoise 7px solid;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.boton{
+    width: 100%;
+    height: 30px;
+    border: white 5px solid;
+}
+
+.boton1{
+
+    height: 40px;
+}
+
+.boton2{
+    width: 150px;
+    margin-left: 160px;
+    padding:15px;
+}
+
+.imagenes{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 300px;
+    margin-left: 100px;
+
+}
+
+
+
+.imagen-eco{
+    width: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   
+}
+
+.imagen-rx{
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 250px;
+    border-radius: 21px;
+    position: absolute; 
+}
+   
+
+.imagen-tubo{
+    width: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include ("../partials/meta.ejs")%>
+  
+    <link rel="stylesheet" href="../css/style.css">
+    <%-include ("../partials/link.ejs")%>
+    <title>Laboratorio</title>
+</head>
+
+<body class="lab">
+    <header>
+        <h1 class="titulo-lab">Laboratorio y Estudios Clínicos</h1> 
+    </header>
+
+    <section>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus incidunt numquam pariatur recusandae at,
+            adipisci voluptatum enim reprehenderit quo consequuntur itaque excepturi exercitationem maiores ad neque
+            quas
+            accusantium rem deserunt!</p>
+    </section>
+    <main class="main-lab">
+        <form action="" class="formulario-lab">
+            <h2 class="datos-lab">Ingrese sus datos</h2>
+            <br>
+            <br>
+
+            <label for="" class="tit-form">Nombre Completo</label>
+            <input type="text" id="nombre" class="boton-lab" name="nombrecompleto" placeholder="Nombre Completo">
+            <br>
+            <br>
+
+            <label for="documento" class="tit-form">D.N.I.</label>
+            <input type="documento" id="dni" class="boton-lab" name="documento" placeholder="Ingrese su DNI">
+            <br>
+            <br>
+
+            <label for="estudio" class="tit-form">Tipo de Estudio</label>
+            <select name="estudio" class="boton1-lab" id="estudio">
+                <option value="analisisdesangre">Análisis de sangre</option>
+                <option value="ecografia">Ecografía</option>
+                <option value="rx">Radiografías</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" class="boton2-lab" value="Enviar">
+        </form>
+
+        <section class="imagenes">
+             <div><img src="../imagenes/img/eco.jpg" class="imagen-eco" alt="ecografia a un bebé"></div>
+             <div><img src="../imagenes/img/rx.jpg" class="imagen-rx" alt="radiografia"></div>
+             <div><img src="../imagenes/img/sangre.jpg" class="imagen-tubo" alt="tubos de ensayo"></div>  
+         </section>
+
+
+        
+
+    </main>
+    <footer class="footer-lab">
+        <%-include ("../partials/footer.ejs") %>
+      </footer>
+</body>
+
+</html>
