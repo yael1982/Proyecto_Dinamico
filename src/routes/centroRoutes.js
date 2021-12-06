@@ -4,18 +4,18 @@ const routes=express.Router();
 
 const {
     renderHome,
-  /*  direccion,
+    direccion,
     getForm,
-    addTurnos*/
+    addTurnos
 
 }=require("../controllers/centroControllers");
 
 routes.get("/",renderHome);
 
-/*routes.get("/dondeestamos");
+routes.get("/dondeestamos",direccion);
 
 routes.get("/laboratorio",getForm);
 
-routes.get("/turnos", addTurnos);*/
+routes.get("/turnos", addTurnos);
 
 module.exports=routes;

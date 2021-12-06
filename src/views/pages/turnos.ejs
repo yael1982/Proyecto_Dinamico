@@ -41,26 +41,18 @@
 
             <label for="mutual" class="tit-form">Esciba su Mutual</label>
             <select name="estudio" class="boton1" id="estudio">
-                <option value="aaa">AAA</option>
-                <option value="bbb">BBB</option>
-                <option value="ccc">CCC</option>
-                <option value="ddd">DDD</option>
-                <option value="eee">EEE</option>
-                <option value="fff">FFF</option>
+                <% dataMutual.forEach(data =>{ %> 
+                <option value="aaa"><%= data %></option>
+                <% }) %>
             </select>
             <br>
             <br>
 
             <label for="profesional">Escriba el nombre del profesional</label>
             <select name="medico" class="boton1" id="medico">
-                <option value="dra.anabellorez">Dra. Annabel Lopez</option>
-                <option value="dra.nancygomez">Dra. Nancy Gomez </option>
-                <option value="dr.gustavocorrea">Dr. Gustavo Correa</option>
-                <option value="dr.carlosfuentes">Dr. Carlos Fuentes</option>
-                <option value="dr.franciscoarregui">Dr. Francisco Arregui </option>
-                <option value="dra.carlamonte">Dra. Carla Monte</option>
-                <option value="dra.pauladiaz">Dra. Paula Diaz</option>
-                <option value="dr.martinfernandez">Dr. Martin Fernandez</option>
+                <% profesionales.forEach(data =>{ %>
+                <option value="dra.anabellopez"><%= data %></option>
+                <% }) %>
             </select>
           
             <input type="submit" class="boton2" value="Enviar">

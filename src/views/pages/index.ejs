@@ -21,6 +21,10 @@
 
       <h1>Bienvenidos</h1>
 
+      <div class="hamburguesa">
+        <label for="hamb"><i class="fas fa-bars"></i></label>
+      </div>
+
       <nav class="barra-nav">    
         <div class="dropdown">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -30,15 +34,9 @@
         <ul class="dropdown dropdown-menu"  aria-labelledby="dropdownMenuLink">
          
           <div class="btn-group dropend"> </div>  
-                    
-          <li><a class="dropdown-item" href="#">Odontología</a></li>
-          <li><a class="dropdown-item" href="#">Endocrinología</a></li>
-          <li><a class="dropdown-item" href="#">Pediatría</a></li>
-          <li><a class="dropdown-item" href="#">Traumatología</a></li>
-          <li><a class="dropdown-item" href="#">Oftanmología</a></li>
-          <li><a class="dropdown-item" href="#">Nefrología</a></li>
-          <li><a class="dropdown-item" href="#">Psicología</a></li>
-          <li><a class="dropdown-item" href="#">Nutrición</a></li>
+          <% especialidades.forEach(data =>{ %>         
+          <li><a class="dropdown-item" href="#"><%= data %></a></li>
+          <% }) %>
         </ul>
       
       </div>
@@ -50,14 +48,9 @@
         </a>  
       
         <ul  class="dropdown dropdown-menu"  aria-labelledby="dropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Dra. Annabel Lopez</a></li>
-          <li><a class="dropdown-item" href="#">Dr. Gustavo Correa</a></li>
-          <li><a class="dropdown-item" href="#">Dra. Nancy Gomez</a></li>
-          <li><a class="dropdown-item" href="#">Dr. Carlos Fuentes</a></li>
-          <li><a class="dropdown-item" href="#">Dr. Francisco Arregui</a></li>
-          <li><a class="dropdown-item" href="#">Dra. Carla Monte</a></li>
-          <li><a class="dropdown-item" href="#">Dra. Paula Diaz</a></li>
-          <li><a class="dropdown-item" href="#">Dr. Martin Fernandez</a></li>
+          <% profesionales.forEach(data =>{ %>   
+          <li><a class="dropdown-item" href="#"><%= data %></a></li>
+          <% }) %>
         </ul>
       </div>       
       
@@ -77,7 +70,7 @@
           <p class="card-text">Más info sobre como contactarse con nosotros</p>
           <br>
           <br>
-          <a href="dondeestamos.ejs" class="click">Más Info</a>
+          <a href="/dondeestamos" class="click">Más Info</a>
         </div>
       </div>
 
@@ -89,7 +82,7 @@
           <!--la unica forma que encontré (o la mas facil) de poder poner a la misma altura los cuadraditos del click, fue hacer 2 renglones para la descricion de la card, asi las 3 tienen el mismo formato-->
           <br>
           <br>
-          <a href="laboratorio.ejs" class="click">Más Info</a>
+          <a href="/laboratorio" class="click">Más Info</a>
         </div>
       </div>
 
@@ -100,7 +93,7 @@
           <p class="card-text">Elija el día y horario que más se adapte a su vida</p>
           <br>
           <br>
-          <a href="turnos.ejs" class="click">Más Info</a>
+          <a href="/turnos" class="click">Más Info</a>
         </div>
       </div>
 

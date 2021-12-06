@@ -212,16 +212,6 @@ p{
     margin-right: 15px;
 }
 
-/*.sidebar{
-    display: flex;
-    flex-direction: column;
-    background-color: darkgrey;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: nowrap;
-    flex-flow: column nowrap;
-}*/
-
 .btn-nav{
     display: flex;
 
@@ -448,9 +438,10 @@ p{
         
     }
 
-    .fas fa-bars{
-        color: red;
-        size: 70px;
+    .fa-bars{
+        color: #2c2c54;
+        size: 40px;
+        margin: 20px;
     }
     
     .section{
@@ -481,6 +472,7 @@ p{
        .footer{
         width: 100%;
     }
+}
 
 
 @media (max-width:768px){
@@ -512,7 +504,13 @@ p{
 
     .hamburguesa {
         display: block;
+        width: 50px;
         
+    }
+
+    .fa-bars{
+        color:#2c2c54;
+        font-size: 50px;
     }
   
 
@@ -520,6 +518,6 @@ p{
         width: 100%;
     }
 
-
+}
 
     

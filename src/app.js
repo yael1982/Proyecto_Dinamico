@@ -11,40 +11,6 @@ console.log(info);
 
 app.use(express.json());
 app.use("",router);
-/*
-app.get("/",(req,res)=>{
-    
-    res.render("pages/index.ejs");
-
-})
-
-app.get("/dondeestamos",(req,res)=>{
-    
-    res.render("pages/dondeestamos.ejs");
-
-})
-
-app.get("/laboratorio",(req,res)=>{
-    
-    res.render("pages/laboratorio.ejs");
-
-})
-
-app.get("/turnos",(req,res)=>{
-    
-    res.render("pages/turnos.ejs");
-
-
-})
-
-
-
-app.post("/especialistasJSON.json",(req,res)=>{
-    let dato = req.body
-
-    res.send("Recibido");
-})*/
-
 
 
 

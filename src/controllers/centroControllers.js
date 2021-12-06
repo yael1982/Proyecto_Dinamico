@@ -1,11 +1,16 @@
 const info= require("../../profesionalesJSON.json")
 
+const dataMutual=require("../../mutuales.json")
+
+const mutual=[]
+    dataMutual.forEach(data => {
+        
+
+    })
 
 
-
-const renderHome=(req,res)=>{
-    const especialidades=[]
-    const profesionales=[]
+const especialidades=[]
+const profesionales=[]
    
     info.forEach(data => {
         if(!(especialidades.find(el=> el === data.especialidad))){
@@ -17,18 +22,37 @@ const renderHome=(req,res)=>{
         
     });
 
+const renderHome=(req,res)=>{
+    
     console.log(profesionales);
 
-
-    res.render("pages/index.ejs",{especialidades,profesionales})
+    res.render("pages/index.ejs",{especialidades,profesionales});
 
 }
+
+const addTurnos=(req,res)=>{
+    
+    res.render("pages/turnos.ejs",{profesionales});
+
+}
+
 
 const direccion=(req,res)=>{
+    res.render("pages/dondeestamos");
 
 }
+
+const getForm= (req,res)=>{
+    res.render("pages/laboratorio")
+}
+
+
+
 module.exports={
     renderHome,
-    direccion
-}
+    direccion,
+    addTurnos,
+    getForm
+
+};
 
