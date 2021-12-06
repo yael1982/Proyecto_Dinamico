@@ -1,12 +1,10 @@
 const info= require("../../profesionalesJSON.json")
 
-const dataMutual=require("../../mutuales.json")
+const dataMutual=require("../../mutuales.json");
 
-const mutual=[]
-    dataMutual.forEach(data => {
-        
 
-    })
+    
+ 
 
 
 const especialidades=[]
@@ -32,7 +30,7 @@ const renderHome=(req,res)=>{
 
 const addTurnos=(req,res)=>{
     
-    res.render("pages/turnos.ejs",{profesionales});
+    res.render("pages/turnos.ejs",{profesionales,dataMutual});
 
 }
 

@@ -29,26 +29,26 @@
             <br>
             <br>
 
-            <label for=""class="tit-form">Nombre Completo</label>
+            <label for=""class="tit-form-turnos">Nombre Completo</label>
             <input type="text" id="nombre" class="boton" name="nombrecompleto" placeholder="Nombre Completo">
             <br>
             <br>
 
-            <label for="documento" class="tit-form">D.N.I.</label>
+            <label for="documento" class="tit-form-turnos">D.N.I.</label>
             <input type="documento" id="dni" class="boton" name="documento" placeholder="Ingrese su DNI">
             <br>
             <br>
 
-            <label for="mutual" class="tit-form">Esciba su Mutual</label>
+            <label for="mutual" class="tit-form-turnos">Seleccione su Mutual</label>
             <select name="estudio" class="boton1" id="estudio">
                 <% dataMutual.forEach(data =>{ %> 
-                <option value="aaa"><%= data %></option>
+                <option value="aaa"><%= data.mutual %></option>
                 <% }) %>
             </select>
             <br>
             <br>
 
-            <label for="profesional">Escriba el nombre del profesional</label>
+            <label for="profesional" class="tit-form-turnos">Seleccione nombre del profesional</label>
             <select name="medico" class="boton1" id="medico">
                 <% profesionales.forEach(data =>{ %>
                 <option value="dra.anabellopez"><%= data %></option>
