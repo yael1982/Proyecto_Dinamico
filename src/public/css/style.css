@@ -7,6 +7,7 @@ body{
     background-image: url(/imagenes/img/fondo1.jpg);
     font-family: 'Caveat', cursive;
     width: 100%;
+    margin: 0px;
     
 }
 
@@ -52,6 +53,10 @@ a{
 
 .hamburguesa{
     display: none;
+}
+
+.iniciaSesion{
+    background-color: #33d9b2;
 }
 
 .btn-secondary{
@@ -383,6 +388,7 @@ p{
 .header-gps{
     background-color: transparent;
     height: 70px;
+    position: relative;
 }
 .body-gps{
     display: flex;
@@ -450,9 +456,10 @@ p{
     .titulos{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: flex-end;
         padding-top: 20px;
+        flex-wrap: wrap;
     }
 
     h1{
@@ -475,6 +482,10 @@ p{
         margin-top:10px;
     }
 
+    .gps-h2{
+        font-size: 50px;
+    }
+
     .lab{
         display: flex;
         flex-direction: column;
@@ -482,7 +493,10 @@ p{
     }
 
     .barra-nav{
-        display: none;
+        display:none;
+        flex-direction: column;
+        width: 400px;
+        margin-left: 0px;
     }
     
     .hamburguesa {
@@ -491,11 +505,29 @@ p{
     }
 
     .fa-bars{
-        color: #2c2c54;
+        color: #40407a;
         size: 40px;
         margin: 20px;
     }
+
+    .showMenu{
+        display: flex;
+    }
+
+    .dropdown-item{
+        font-size: 25px;
+    }
+
+    .btn-secondary{
+        width: 100%;
+        opacity: 90%;
+    }
     
+    .iniciaSesion{
+        width: 100%;
+        text-align: center;
+        opacity: 90%;
+    }
     .section{
         margin-left: 0px;
         padding-left: 0px;
@@ -503,14 +535,14 @@ p{
 
     .card{
         position: relative;
+        margin: 30px 0px;
        
     }
 
     .main-lab{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-       
+        flex-wrap: wrap; 
     }
 
     .formulario{
@@ -527,6 +559,17 @@ p{
         width: 90%;
         display: flex;
         flex-wrap: nowrap;
+        margin-top:20px;
+    }
+
+    .imagen-eco{
+        width: 300px;
+    }
+
+    .imagen-rx{
+        width: 250px;
+        margin-top: 10px;
+        position: relative;
     }
 
     .formulario-turno{
@@ -538,6 +581,10 @@ p{
     }
     
     .footer{
+        width: 100%;
+    }
+
+    .footer-lab{
         width: 100%;
     }
 
@@ -567,11 +614,7 @@ p{
         flex-wrap: wrap;
         position: relative;
     }
-
-    .barra-nav{
-        display: none;
-    }
-
+   
     .parrafo{
         margin-top: 150px;
     }
@@ -587,18 +630,35 @@ p{
 
     .hamburguesa {
         display: block;
-        width: 50px;
-        
+        /*width: 50px;   */  
     }
 
-    .fa-bars{
-        color:#2c2c54;
-        font-size: 50px;
+    .showMenu{
+        display: flex;
     }
+    
+        /* .barra-nav{
+        display: none;
+    }*/
+
+    .fa-bars{
+        color:#40407a;
+        font-size: 50px;
+        margin-left: 100%;
+        margin-bottom: 20px;
+
+    }
+
     .lab{
         display: flex;
         flex-direction: column;
 
+    }
+    
+    .main-lab{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
     .formulario-turno{
         display: flex;
@@ -609,7 +669,14 @@ p{
 
     .formulario-lab{
         display: flex;
+        margin-top: 20px;
+        width: 100%;
         
+    }
+
+    .imagenes{
+        display: flex;
+
     }
   
 
