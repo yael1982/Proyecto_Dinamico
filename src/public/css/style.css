@@ -630,12 +630,12 @@ p{
     .calendario{
         width: 100%;
     }
-    
+
     .barra-nav{
         display:none;
-        flex-direction: column;
+        /*flex-direction: column;
         width: 400px;
-        margin-left: 0px;
+        margin-left: 0px;*/
     }
      .hamburguesa {
         display: block;
