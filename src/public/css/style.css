@@ -16,7 +16,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 20px;
+    padding-top: 0px;
     
 }
 
@@ -47,8 +47,10 @@ a{
 }
 
 .barra-nav{
-    display: flex;
-    margin-left: 450px;
+    display:none;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 0px;
 }
 
 .hamburguesa{
@@ -435,6 +437,7 @@ p{
 		display: flex;
 		flex-direction: row;       
     }
+    
     .header-gps{
         position: relative;
         height: 60px;
@@ -492,17 +495,17 @@ p{
         align-items: center;
     }
 
-    .barra-nav{
+    /*.barra-nav{
         display:none;
         flex-direction: column;
         width: 400px;
         margin-left: 0px;
-    }
+    }*/
     
-    .hamburguesa {
+    /*.hamburguesa {
         display: block;
         
-    }
+    }*/
 
     .fa-bars{
         color: #40407a;
@@ -510,13 +513,13 @@ p{
         margin: 20px;
     }
 
-    .showMenu{
+    /*.showMenu{
         display: flex;
-    }
+    }*/
 
-    .dropdown-item{
+    /*.dropdown-item{
         font-size: 25px;
-    }
+    }*/
 
     .btn-secondary{
         width: 100%;
@@ -528,6 +531,7 @@ p{
         text-align: center;
         opacity: 90%;
     }
+    
     .section{
         margin-left: 0px;
         padding-left: 0px;
@@ -580,9 +584,9 @@ p{
         justify-content: center;
     }
     
-    .footer{
+    /*.footer{
         width: 100%;
-    }
+    }*/
 
     .footer-lab{
         width: 100%;
@@ -596,10 +600,10 @@ p{
 
 @media (max-width:768px){
     
-    main{
+    /*main{
         display:grid;
         grid-template-columns: 3, 3fr;
-    }
+    }*/
     
     header{
 		width: 100%;
@@ -630,21 +634,29 @@ p{
 
     .hamburguesa {
         display: block;
-        /*width: 50px;   */  
+        width: 50px;   
+    }
+
+    .barra-nav{
+        display:none;
+        flex-direction: column;
+        width: 400px;
+        margin-left: 0px;
     }
 
     .showMenu{
         display: flex;
     }
+
     
-        /* .barra-nav{
-        display: none;
-    }*/
+    .dropdown-item{
+        font-size: 25px;
+    }
 
     .fa-bars{
         color:#40407a;
         font-size: 50px;
-        margin-left: 100%;
+       /* margin-left: 100%;*/
         margin-bottom: 20px;
 
     }
@@ -659,6 +671,7 @@ p{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        margin-left: 0px;
     }
     .formulario-turno{
         display: flex;
@@ -676,7 +689,12 @@ p{
 
     .imagenes{
         display: flex;
+    }
 
+    .imagen-rx{
+        width: 200px;
+        position: relative;
+        margin: 0px;
     }
   
 
