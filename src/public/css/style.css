@@ -47,10 +47,9 @@ a{
 }
 
 .barra-nav{
-    display:none;
-    flex-direction: column;
-    width: 400px;
-    margin-left: 0px;
+    display:flex;
+    flex-direction: raw;
+    margin-left: 800px;
 }
 
 .hamburguesa{
@@ -495,17 +494,17 @@ p{
         align-items: center;
     }
 
-    /*.barra-nav{
+    .barra-nav{
         display:none;
         flex-direction: column;
         width: 400px;
         margin-left: 0px;
-    }*/
+    }
     
-    /*.hamburguesa {
+    .hamburguesa {
         display: block;
         
-    }*/
+    }
 
     .fa-bars{
         color: #40407a;
@@ -513,13 +512,13 @@ p{
         margin: 20px;
     }
 
-    /*.showMenu{
+    .showMenu{
         display: flex;
-    }*/
-
-    /*.dropdown-item{
+    }
+    
+    .dropdown-item{
         font-size: 25px;
-    }*/
+    }
 
     .btn-secondary{
         width: 100%;
@@ -636,6 +635,10 @@ p{
         display: block;
         width: 50px;   
     }
+    
+    .showMenu{
+        display: flex;
+    }
 
     .barra-nav{
         display:none;
@@ -643,14 +646,10 @@ p{
         width: 400px;
         margin-left: 0px;
     }
-
-    .showMenu{
-        display: flex;
-    }
-
     
+
     .dropdown-item{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .fa-bars{
