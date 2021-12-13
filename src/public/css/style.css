@@ -15,8 +15,8 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 0px;
+    align-items: flex-start;
+    padding-top: 10px;
     
 }
 
@@ -48,7 +48,7 @@ a{
 
 .barra-nav{
     display:flex;
-    flex-direction: raw;
+    flex-direction: row;
     margin-left: 800px;
 }
 
@@ -71,6 +71,11 @@ a{
 .dropdown-menu{
     background-color: #33d9ba;
     border-radius: 1rem;
+}
+
+.dropdown-item{
+    color: #40407a;
+    
 }
 
 main{
@@ -455,15 +460,6 @@ p{
 
     }
 
-    .titulos{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-end;
-        padding-top: 20px;
-        flex-wrap: wrap;
-    }
-
     h1{
         font-size: 3em;
         margin: 5px;
@@ -509,7 +505,7 @@ p{
     .fa-bars{
         color: #40407a;
         size: 40px;
-        margin: 20px;
+        margin: 20px 50px;
     }
 
     .showMenu{
@@ -518,6 +514,7 @@ p{
     
     .dropdown-item{
         font-size: 25px;
+        
     }
 
     .btn-secondary{
@@ -583,10 +580,6 @@ p{
         justify-content: center;
     }
     
-    /*.footer{
-        width: 100%;
-    }*/
-
     .footer-lab{
         width: 100%;
     }
@@ -598,11 +591,6 @@ p{
 
 
 @media (max-width:768px){
-    
-    /*main{
-        display:grid;
-        grid-template-columns: 3, 3fr;
-    }*/
     
     header{
 		width: 100%;
@@ -633,7 +621,7 @@ p{
 
     .barra-nav{
         display:none;
-        /*flex-direction: column;
+       /* flex-direction: column;
         width: 400px;
         margin-left: 0px;*/
     }
@@ -644,10 +632,6 @@ p{
     
     .showMenu{
         display: flex;
-    }
-
-    .dropdown-item{
-        font-size: 30px;
     }
 
     .fa-bars{
@@ -670,6 +654,7 @@ p{
         align-items: flex-end;
         margin-left: 0px;
     }
+
     .formulario-turno{
         display: flex;
         flex-direction: row;
@@ -699,6 +684,15 @@ p{
         width: 100%;
     }
 
+    .titulos{
+        /* display: flex;*/
+         flex-direction: row;
+         justify-content: flex-start;
+         align-items: flex-end;
+         padding-top: 20px;
+         flex-wrap: wrap;
+     }
+ 
 }
 
     
