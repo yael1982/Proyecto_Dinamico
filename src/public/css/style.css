@@ -508,9 +508,9 @@ p{
         margin: 20px 50px;
     }
 
-    .showMenu{
+/*.showMenu{
         display: flex;
-    }
+    }*/
     
     .dropdown-item{
         font-size: 25px;
@@ -524,7 +524,7 @@ p{
     
     .iniciaSesion{
         width: 100%;
-        text-align: center;
+        text-align: left;
         opacity: 90%;
     }
     
@@ -605,6 +605,15 @@ p{
         flex-wrap: wrap;
         position: relative;
     }
+    
+    .titulos{
+        display: flex;
+         flex-direction: row;
+         align-items: flex-end;
+         padding-top: 20px;
+         flex-wrap: wrap;
+         margin-right: 50px;
+     }
    
     .parrafo{
         margin-top: 150px;
@@ -621,9 +630,9 @@ p{
 
     .barra-nav{
         display:none;
-       /* flex-direction: column;
+       flex-direction: column;
         width: 400px;
-        margin-left: 0px;*/
+        margin-left: 0px;
     }
      .hamburguesa {
         display: block;
@@ -684,14 +693,12 @@ p{
         width: 100%;
     }
 
-    .titulos{
-        /* display: flex;*/
-         flex-direction: row;
-         justify-content: flex-start;
-         align-items: flex-end;
-         padding-top: 20px;
-         flex-wrap: wrap;
-     }
+    .btn-secondary{
+        width: 100%;
+        text-align: left;
+    }
+
+   
  
 }
 
