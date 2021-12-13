@@ -630,8 +630,14 @@ p{
     .calendario{
         width: 100%;
     }
-
-    .hamburguesa {
+    
+    .barra-nav{
+        display:none;
+        flex-direction: column;
+        width: 400px;
+        margin-left: 0px;
+    }
+     .hamburguesa {
         display: block;
         width: 50px;   
     }
@@ -639,14 +645,6 @@ p{
     .showMenu{
         display: flex;
     }
-
-    .barra-nav{
-        display:none;
-        flex-direction: column;
-        width: 400px;
-        margin-left: 0px;
-    }
-    
 
     .dropdown-item{
         font-size: 30px;
